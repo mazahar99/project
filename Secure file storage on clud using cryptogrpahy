@@ -1,0 +1,14 @@
+Abstract :- The data security on cloud can be achieved as
+            1.)Divide the data into chunks.
+            2.)Store each and every chunk of data on cloud by making use of AES(Advanced Encrytion Standards Algorithm)
+Data Encryption Standards(DES) :- block cipher
+                                  plain text and the cipher text would be of same length
+                                  64 bit block cipher
+                                  uses a particular key inorder to encrypt and decrypt
+Advanced Data Encryption Standards(AES) :- subset of Rijndael Cipher
+                                           a.)Byte Substitution
+                                           b.)Shift Rows
+                                           c.)Mix columns
+                                           d.)Add Round Key
+                                           For the sake of decryption the entire steps are to be followed in reverse way.
+Conclusion :- Hence, by making use of this mechanism we can store the encrypted data securely in cloud.
