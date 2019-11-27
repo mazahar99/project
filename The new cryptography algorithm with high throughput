@@ -1,0 +1,25 @@
+Conference January 3-4 2014
+Abstract :- Improving the throughput of Advanced Encryption Algorithm(AES).
+The paramters which are to used to know whether the algorithm is better or not are:-
+            1.)Key Generation
+            2.)Encryption Process
+            3.)Decryption Process
+Algorithm :-
+Steps of Encryption:-
+1.)convert the 16 characters plain text in binary format(128 bits). Per character 8 bits.
+2.)Divide 128 bit plain text into 64 bits seperately.
+3.)Arrange both 64 bits in reverse order.
+4.)Merge both part and apply XOR operation with 128 bits of key(first convert the key in the form of 128 bits).
+   And perform circular left shift operation on the key for second round.
+5.)Divide 128 bits of result into 16 parts each of 8 bits.
+6.)Divide each of the 8 bits into two pats each of 4 bits.
+7.)Collect all the left 4 bits part and right 4 bits part in two 64-64 bits respectively.
+8.)Now apply XOR operation on the left and right 64 bits and store the result in left 64 bits. And keep the right 64 bits as it ia(no change in right 64 bits).
+9.)Combine both 64 bits in to 128 bits format(Repeat N time from step no. 4).
+10.)Now divide 128 bits into 16 parts each of 8 bits.
+11.)Divide each of the 8 bits intotwo parts of 2 bits and 6 bits respectively.
+12.)Perform circular left shift operation on all 6 bits.
+13.)Combine all parts - and get 128 bit(16 characters) of cipher text.
+The results show that this algorithm satisfies the parameters better than than the AES algorithm.
+link:-https://sci-hub.tw/10.1109/iccci.2014.6921739
+            
